@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sum = 0;
+    int number = 0;
+
+    while (number >= 0) {
+
+        sum += number;
+
+
+        cout << "Enter a number: ";
+        cin >> number;
+
+        if (number > 50) {
+            cout << "The number is greater than 50 and won't be calculated." << endl;
+            number = 0;
+            break;
+        }
+    }
+
+    cout << "The sum is " << sum << endl;
+
+    return 0;
+}
